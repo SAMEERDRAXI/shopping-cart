@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shopping cart example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <link rel="stylesheet"  href="shopingcart1.css"> 
+  
+</head>
+<body>
+
+<div class="container"> 
+   <h1>Simple JavaScript Shopping Cart</h1>
+   <p>Simplified 'add to cart' functionality. Uses Javascript
+   and WebStorage API/Cookies to remember cart data converted to JSON format.</p>
+   <p>Click 'Empty Cart' button to remove session cookies from browser.</p>
+   <div id="alerts"></div>
+<div class="productcont">
+        <div class="product">
+            <h3 class="productname">Product 1</h3>
+            <img src="https://static.toiimg.com/thumb/resizemode-4,msid-79321327,imgsize-500,width-800/79321327.jpg">
+            <p>Hawaie mobiles</p>
+            <p class="price">$200.05</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+            <h3 class="productname">Product 2</h3>
+            <img src="https://m.media-amazon.com/images/I/51oOTo9kW0L._SL1000_.jpg">
+            <p>Computer glasses</p>
+            <p class="price">$10.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        <div class="product">
+            <h3 class="productname">Product 3</h3>
+            <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MWP22?wid=2000&hei=2000&fmt=jpeg&qlt=95&.v=1591634795000">
+            <p>Sams Air pods</p>
+            <p class="price">$100.50</p>
+            <button class="addtocart">Add To Cart</button>
+        </div>
+        </div>
+        <div class="cart-container">
+          <h2>Cart</h2>
+          <table>
+            <thead>
+              <tr>
+              <th><strong>Product</strong></th>
+              <th><strong>Price</strong></th>
+            </tr>
+            </thead>
+            <tbody id="carttable">
+            </tbody>
+          </table>
+          <hr>
+          <table id="carttotals">
+            <tr>
+              <td><strong>Items</strong></td>
+              <td><strong>Total</strong></td>
+            </tr>
+            <tr>
+              <td>x <span id="itemsquantity">0</span></td>
+             
+              <td>$<span id="total">0</span></td>
+            </tr></table>
+
+            
+          <div class="cart-buttons">  
+            <button id="emptycart">Empty Cart</button>
+            <button id="checkout">Checkout</button>
+          </div>
+        </div>
+</div>
+
+
+
+
+<script src="shopingcart1.js"></script>
+
+</body>
+</html>
